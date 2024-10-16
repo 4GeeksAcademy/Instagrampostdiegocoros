@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.titulologo {
+    margin-left: 15px;
+    flex-grow: 1; /* Permite que el título use el espacio sobrante */
+}
+
+.titulologo h1 {
+    font-size: 18px;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.titulologo h2 {
+    font-size: 14px;
+    color: #999;
+}
+
+.trespuntos {
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: auto; /* Se asegura de que esté alineado a la derecha */
+}
+
+.trespuntos:hover {
+    color: #ff4757;
+}
+
+.post-imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.post-body {
+    padding: 15px;
+}
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.three-icons{
+    justify-content:left;
+}
+.post-icons i {
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.post-icons i:hover {
+    color: #ff4757;
+}
+
+.post-body p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-body p strong {
+    color: #000;
+}
+
+.post-body p:nth-of-type(2) {
+    margin-top: 5px;
+}
+
